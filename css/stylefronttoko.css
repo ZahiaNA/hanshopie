@@ -1,0 +1,275 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f7f3ef;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* HEADER */
+
+.user-header{
+    background:#c7a07a;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 5px rgba(0,0,0,0.15);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.nama-toko{
+    display:flex;
+    flex-direction:column;
+}
+
+.nama-toko h2{
+    color:white;
+    margin:0;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nama-toko p{
+    color:white;
+    margin-top:3px;
+    font-size:14px;
+}
+
+/* NAVBAR */
+
+nav{
+    background:none;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.menu li{
+    margin:0;
+}
+
+.menu li a{
+    display:block;
+    padding:10px 18px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.menu li a:hover{
+    background:#b38a62;
+}
+
+/* CONTENT */
+
+.content-user{
+    padding:20px;
+}
+/* CONTENT */
+.content-user{
+    padding:20px;
+}
+
+.card-user{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.card-user h2,
+.card-user h3{
+    color:#8B5E4C;
+}
+
+.card-user p,
+.card-user article{
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* KATALOG BUNDLE */
+
+.slider-bundle{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding:15px 0;
+    margin-bottom:20px;
+    scroll-behavior:smooth;
+}
+
+.slider-bundle::-webkit-scrollbar{
+    height:8px;
+}
+
+.slider-bundle::-webkit-scrollbar-track{
+    background:#eee;
+    border-radius:10px;
+}
+
+.slider-bundle::-webkit-scrollbar-thumb{
+    background:#c7a07a;
+    border-radius:10px;
+}
+
+.slidertrack{
+    display:inline-block;
+    background:white;
+    border-radius:10px;
+    padding:10px;
+    flex-shrink:0;
+}
+
+.slidertrack:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.slidertrack img{
+    display:block;
+    max-width:200px;
+    height:200px;
+    border-radius:5px;
+    margin:auto;
+}
+
+.slidertrack h3{
+    padding:10px 15px 5px;
+    color:#8B5E4C;
+    text-align: center;
+}
+
+.slidertrack p{
+    padding:0 15px 15px;
+    color:#555;
+    text-align: center;
+}
+
+/* PRODUK */
+.container-produk{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card-produk{
+    display:inline-block;
+    background:white;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    text-align:left;
+}
+
+.card-produk:hover{
+    transform:translateY(-10px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
+
+.card-produk img{
+    display:block;
+    max-width:200px;
+    height:200px;
+    border-radius: 5px;
+}
+
+.card-produk h3{
+    padding:10px;
+    color:#8B5E4C;
+}
+
+.card-produk p{
+    padding:0 10px 10px;
+}
+
+/* FORM LOGIN */
+form{
+    width:400px;
+    max-width:95%;
+    margin:50px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+}
+
+legend{
+    font-size:20px;
+    font-weight:bold;
+    color:#8B5E4C;
+    margin-bottom:15px;
+}
+
+input[type="text"],
+input[type="password"]{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:5px;
+    background:#8B5E4C;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background:#D4A017;
+}
+
+/* FOOTER */
+footer{
+    margin:15px;
+    padding:15px;
+    background:#c7a07a;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+    .user-header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+
+    .logo-toko,.nama-toko,
+    .info-toko{
+        text-align:center;
+    }
+
+    .menu{
+        flex-direction:column;
+    }
+
+    .card-produk{
+        width:100%;
+    }
+}

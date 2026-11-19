@@ -1,0 +1,15 @@
+# File sistem operasi Windows & macOS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Pengaturan editor / IDE
+.vscode/
+.idea/
+
+# File environment & log sementara
+.env
+*.log
+*.bak
+*.tmp
